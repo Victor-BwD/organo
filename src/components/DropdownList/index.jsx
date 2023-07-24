@@ -5,6 +5,7 @@ const DropdownList = ({label, items, valor, onChangeFieldLetter}) => {
     <div className="dropdown-list">
       <label>{label}</label>
       <select onChange={evento => onChangeFieldLetter(evento.target.value)} value={valor}>
+        <option value=""></option>
         {items.map(item => <option key={item}>{item}</option>)}
       </select>
     </div>

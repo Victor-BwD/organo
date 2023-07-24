@@ -20,6 +20,11 @@ const Form = ({newCharacterAdded, bgNames}) => {
       image,
       background
     })
+
+    setName("")
+    setJob("")
+    setImage("")
+    setBackground("")
   }
 
   return (
